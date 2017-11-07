@@ -1,0 +1,40 @@
+.Navigation {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .Navigation {
+      display: block; } }
+
+.RoundNav {
+  margin: 20px;
+  position: relative; }
+  .RoundNav span {
+    display: block;
+    top: -10px;
+    position: absolute;
+    text-align: right;
+    right: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateX(-10px);
+    letter-spacing: 2px;
+    color: #FF4E00;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 40px; }
+  .RoundNav:hover span {
+    transform: translateX(0px);
+    opacity: 1; }
+
+.Indicator {
+  border-radius: 100px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: 0.5s; }
+  .Indicator:hover {
+    border-color: #FF4E00; }
+  .Indicator .selected {
+    border-color: #FF4E00;
+    background-color: #FF4E00; }

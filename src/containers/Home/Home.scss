@@ -1,0 +1,44 @@
+@import 'style-extra/variables.scss';
+
+.BackgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.Header {
+    font-size: 5rem;
+    font-weight: 100;
+    z-index: 1;
+    max-width: 90vw;
+    font-family: 'Playfair Display';
+    text-align: center;
+    color: $accentColor;
+    @media screen and (min-width: 1080px) {
+        font-size: 8rem;
+    }
+}
+
+.Akta {
+    color: lighten($accentColor, 16%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    text-align: center;
+    font-size: 32vw;
+    line-height: 100vh;
+    font-weight: 900;
+}

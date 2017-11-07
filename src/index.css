@@ -6,17 +6,16 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  text-align: center;
-  color: #fbf2d2;
-  background-color: #8a5d65; }
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+  color: #313131; }
 
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
   font-weight: 100;
   line-height: 1.72;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +30,8 @@ p,
 blockquote,
 figure,
 ol,
-ul {
+ul,
+span {
   margin: 0;
   padding: 0;
   font-weight: 100;
@@ -87,7 +87,9 @@ img {
   border: 0; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  line-height: 0;
+  user-select: none; }
 
 main {
   height: 100vh;
@@ -95,25 +97,25 @@ main {
   overflow-y: auto; }
 
 h1 {
-  font-size: 6rem; }
+  font-size: 2.6rem; }
   @media screen and (min-width: 1080px) {
     h1 {
-      font-size: 14rem; } }
+      font-size: 4rem; } }
 
 h2 {
-  font-size: 4rem; }
+  font-size: 2.4rem; }
   @media screen and (min-width: 1080px) {
     h2 {
-      font-size: 8rem; } }
+      font-size: 3rem; } }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2.2rem; }
   @media screen and (min-width: 1080px) {
     h3 {
-      font-size: 2.2rem; } }
+      font-size: 2.5rem; } }
 
 h4 {
-  font-size: 1.8rem; }
+  font-size: 2rem; }
   @media screen and (min-width: 1080px) {
     h4 {
       font-size: 2rem; } }

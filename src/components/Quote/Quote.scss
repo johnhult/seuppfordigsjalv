@@ -1,0 +1,18 @@
+@import 'style-extra/variables.scss';
+
+.Quote {
+    line-height: 1;
+    font-size: 5rem;
+    font-style: italic;
+    max-width: 90vw;
+    display: block;
+    font-weight: 900;
+    position: absolute;
+    z-index: 1;
+    color: $accentColor;
+    @media screen and (min-width: 1080px) {
+        font-size: 7rem;
+        width: 800px;
+        max-width: 68vw;
+    }
+}

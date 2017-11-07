@@ -12,6 +12,9 @@
 		"react-svg": "^2.1.21"
 	},
 	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-react": "^6.24.1",
 		"eslint": "^3.19.0",
 		"eslint-plugin-react": "^7.0.1",
 		"react-scripts": "0.9.5"

@@ -1,8 +1,10 @@
 {
 	"env": {
 		"browser": true,
-		"es6": true
+		"es6": true,
+        "amd": true
 	},
+    "parser": "babel-eslint",
 	"extends": "eslint:recommended",
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -17,7 +19,7 @@
 	"rules": {
 		"indent": [
 			"error",
-			"tab"
+			4
 		],
 		"linebreak-style": [
 			"error",
