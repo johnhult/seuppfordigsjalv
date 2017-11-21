@@ -1,40 +1,91 @@
 .Navigation {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 720px) {
     .Navigation {
-      display: block; } }
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      top: 20px; } }
 
-.RoundNav {
-  margin: 20px;
-  position: relative; }
-  .RoundNav span {
-    display: block;
-    top: -10px;
-    position: absolute;
-    text-align: right;
-    right: 40px;
-    height: 40px;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateX(-10px);
-    letter-spacing: 2px;
-    color: #FF4E00;
-    text-transform: uppercase;
-    white-space: nowrap;
-    line-height: 40px; }
-  .RoundNav:hover span {
-    transform: translateX(0px);
-    opacity: 1; }
+.NavOuter {
+  padding: 5px 20px 5px 5px;
+  position: relative;
+  text-align: right;
+  cursor: pointer; }
+  .NavOuter:hover .Indicator {
+    width: 100%; }
+
+.NavName {
+  display: inline-block;
+  vertical-align: middle;
+  top: -10px;
+  text-align: right;
+  right: 40px;
+  height: 30px;
+  transition: 0.3s;
+  transform: translateX(-10px);
+  letter-spacing: 2px;
+  color: #ac6cbb;
+  color: #e0d484;
+  color: black;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 40px;
+  font-weight: 900;
+  margin-right: 40px; }
 
 .Indicator {
-  border-radius: 100px;
-  border: 1px solid #cccccc;
-  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: black;
+  position: absolute;
+  top: 24px;
+  right: 20px;
   width: 20px;
-  height: 20px;
-  transition: 0.5s; }
+  height: 2px;
+  transition: 0.2s; }
   .Indicator:hover {
     border-color: #FF4E00; }
-  .Indicator .selected {
-    border-color: #FF4E00;
-    background-color: #FF4E00; }
+
+.Selected .Indicator {
+  width: 100%;
+  background-color: #ffdccc; }
+
+.Selected .NavName {
+  color: #ffdccc; }
+
+.NoPage {
+  width: 100vw;
+  height: 100vh;
+  text-align: center; }
+
+.NoPage404 {
+  color: #fbf9ee;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  text-align: center;
+  font-size: 32vw;
+  line-height: 100vh;
+  font-weight: 900;
+  pointer-events: none; }
+
+.BackToStart {
+  display: inline-block;
+  color: #FF4E00;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 4vw;
+  text-transform: lowercase;
+  transition: 0.2s;
+  letter-spacing: 0px;
+  cursor: pointer; }
+  .BackToStart:hover {
+    letter-spacing: 5px; }

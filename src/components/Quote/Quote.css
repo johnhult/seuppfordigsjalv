@@ -1,15 +1,16 @@
 .Quote {
+  font-size: 3.9rem;
   line-height: 1;
-  font-size: 5rem;
   font-style: italic;
-  max-width: 90vw;
   display: block;
   font-weight: 900;
-  position: absolute;
   z-index: 1;
-  color: #EAE2AD; }
+  color: #183099; }
+  @media screen and (min-width: 720px) {
+    .Quote {
+      position: absolute;
+      font-size: 5rem; } }
   @media screen and (min-width: 1080px) {
     .Quote {
       font-size: 7rem;
-      width: 800px;
-      max-width: 68vw; } }
+      width: 800px; } }

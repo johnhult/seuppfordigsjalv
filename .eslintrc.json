@@ -41,6 +41,26 @@
 		],
 		"react/jsx-uses-vars": [
 			"error"
-		]
+		],
+        "keyword-spacing": [
+            "error",
+            {
+                "overrides": {
+                    "if": {
+                        "after": false
+                    },
+                    "for": {
+                        "after": false
+                    },
+                    "while": {
+                        "after": false
+                    }
+                }
+            }
+        ],
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ]
 	}
 }

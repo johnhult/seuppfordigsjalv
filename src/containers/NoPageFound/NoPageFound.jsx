@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavigationService from 'services/NavigationService';
 
 class NoPageFound extends Component {
     constructor(props) {
@@ -6,6 +7,12 @@ class NoPageFound extends Component {
         this.state = {
 
         };
+    }
+    
+    componentDidMount() {
+        setTimeout(function() {
+            NavigationService.currentlyNavigating = false;
+        }, 1000);
     }
 
     render() {

@@ -91,7 +91,7 @@ class BackgroundCanvas extends Component {
         });
 //        this.ctx.bezierCurveTo(0, 0, 0, 0, this.state.vw, this.state.vh);
 //        this.ctx.moveTo(0, this.canvas.height);
-        this.ctx.fillStyle = '#000000';
+        this.ctx.fillStyle = '#6c7c8a';
         this.ctx.fill();
     }
     
@@ -139,7 +139,6 @@ class BackgroundCanvas extends Component {
         this.ctx = this.canvas.getContext('2d');
         window.addEventListener('resize', this.updateDimensions);
         this.updateDimensions();
-        this.drawLine();
 //        window.requestAnimationFrame(this.draw);
     }
 

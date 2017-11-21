@@ -17,28 +17,78 @@
 }
 
 .Header {
-    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
     font-weight: 100;
     z-index: 1;
     max-width: 90vw;
+    font-size: 5rem;
     font-family: 'Playfair Display';
     text-align: center;
     color: $accentColor;
-    @media screen and (min-width: 1080px) {
-        font-size: 8rem;
+    transition: 1s;
+    overflow: hidden;
+    transform: translateY(-20px);
+    opacity: 0;
+    @media screen and (min-width: 720px) {
+        height: 102px;
+        font-size: 6rem;
     }
+    @media screen and (min-width: 1080px) {
+        height: 136px;
+        font-size: 10rem;
+    }
+}
+
+.HeaderIn {
+    transition: 3s 1s;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.HeaderOut {
+    transition: 2s 1s;
+    height: 0;
+}
+
+.AktaWrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50vw;
+    right: 50vw;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    transition: 1.4s;
 }
 
 .Akta {
     color: lighten($accentColor, 16%);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
+    flex-shrink: 0;
+    overflow: auto;
     text-align: center;
     font-size: 32vw;
     line-height: 100vh;
     font-weight: 900;
+    z-index: 0;
+    white-space: nowrap;
+    span {
+        display: inline-block;
+    }
+}
+
+.AktaIn {
+    left: 0;
+    right: 0;
+}
+
+.AktaLetterOutLeft {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-50px);
 }
